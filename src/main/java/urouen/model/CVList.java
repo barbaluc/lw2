@@ -5,7 +5,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 import java.util.ArrayList;
 import java.util.List;
 
-@XmlRootElement(name="cv_list")
+@XmlRootElement(name = "cv_list")
 public class CVList {
 
     private List<CVEntry> listCV;
@@ -26,4 +26,6 @@ public class CVList {
     public void setListCV(List<CVEntry> listCV) {
         this.listCV = listCV;
     }
+
+    public void addCV(CVEntry cvEntry) { listCV.add(cvEntry);}
 }

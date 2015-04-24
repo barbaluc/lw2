@@ -43,6 +43,8 @@ public class CVControler {
         cvEntry.setFirstname(cv.getFirstname());
         cvEntry.setName(cv.getName());
 
+        cvList.addCV(cvEntry);
+
         return cvEntry;
     }
 
