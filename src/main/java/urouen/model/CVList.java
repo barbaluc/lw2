@@ -12,9 +12,9 @@ public class CVList {
 
     public CVList() {
         this.listCV = new ArrayList<CVEntry>();
-        listCV.add(new CVEntry(1, "Petitquidanse", "Jean"));
-        listCV.add(new CVEntry(2, "Pastamob", "Alphonse"));
-        listCV.add(new CVEntry(3, "Washington", "Georges"));
+        listCV.add(new CVEntry(1, "Jean", "Petitquidanse"));
+        listCV.add(new CVEntry(2, "Alphonse", "Pastamob"));
+        listCV.add(new CVEntry(3, "Georges", "Washington"));
 
     }
 

@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4497709f-f170-41cd-953b-a77c2d6d7f41" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/urouen/controller/CVControler.java" afterPath="$PROJECT_DIR$/src/main/java/urouen/controller/CVControler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/urouen/model/CVEntry.java" afterPath="$PROJECT_DIR$/src/main/java/urouen/model/CVEntry.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/urouen/model/CVList.java" afterPath="$PROJECT_DIR$/src/main/java/urouen/model/CVList.java" />
     </list>
     <ignored path="LW2-TP3.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -57,21 +56,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CVControler.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CVControler.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/urouen/controller/CVControler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="0.45945945">
               <caret line="40" column="76" selection-start-line="40" selection-start-column="76" selection-end-line="40" selection-end-column="76" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CVList.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CVList.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/urouen/model/CVList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.13513513">
-              <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -158,10 +157,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/urouen/model/CVList.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/urouen/controller/CVControler.java" />
         <option value="$PROJECT_DIR$/src/main/java/urouen/model/CVEntry.java" />
+        <option value="$PROJECT_DIR$/src/main/java/urouen/model/CVList.java" />
       </list>
     </option>
   </component>
@@ -710,12 +709,12 @@
       <option name="number" value="Default" />
       <updated>1429860176544</updated>
       <workItem from="1429860178102" duration="7103000" />
-      <workItem from="1429885327814" duration="1171000" />
+      <workItem from="1429885327814" duration="2148000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8274000" />
+    <option name="totallyTimeSpent" value="9251000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="796" extended-state="0" />
@@ -940,14 +939,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/urouen/controller/CVControler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="40" column="76" selection-start-line="40" selection-start-column="76" selection-end-line="40" selection-end-column="76" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/urouen/model/CVEntry.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -967,8 +958,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/urouen/model/CVList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13513513">
-          <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/urouen/controller/CVControler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.45945945">
+          <caret line="40" column="76" selection-start-line="40" selection-start-column="76" selection-end-line="40" selection-end-column="76" />
           <folding />
         </state>
       </provider>
