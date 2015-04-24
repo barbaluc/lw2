@@ -1,10 +1,7 @@
 package urouen.controller;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 import urouen.model.CV;
 import urouen.model.CVEntry;
 import urouen.model.CVList;
@@ -40,7 +37,7 @@ public class CVControler {
 
     @RequestMapping(value="", method = RequestMethod.POST)
     public @ResponseBody
-    CVEntry getCVByPost(CVEntry cv) {
+    CVEntry getCVByPost(@RequestBody CVEntry cv) {
         CVEntry cvEntry = new CVEntry(cv.getId(), cv.getFirstname(), cv.getName());
         cvEntry.setId(cv.getId());
         cvEntry.setFirstname(cv.getFirstname());
