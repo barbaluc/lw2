@@ -25,7 +25,7 @@ public class CVControler {
     CVEntry getCVByID(@PathVariable int id) {
         CVEntry cv = new CVEntry();
 
-        for (CVEntry cvEntry: cvList.getListCV()) {
+        for (CVEntry cvEntry: cvList.getCv()) {
             if (cvEntry.getId() == id) {
                 cv = cvEntry;
                 break;
