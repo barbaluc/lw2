@@ -15,21 +15,14 @@ public class CVControler {
 
     public CVList cvList = new CVList();
 
-    /**
-     * renvoie un flux XML contenant la liste des CV
-     * @return une liste de CV
-     */
+
     @RequestMapping(value="", method = RequestMethod.GET)
     public @ResponseBody
     CVList getAllCV() {
         return cvList;
     }
 
-    /**
-     * renvoie un flux XML decrivant le CV d’idenditifiant id.
-     * @param id de la personne recherchee
-     * @return le cv de la personne dont l'id est entre en parametre
-     */
+
     @RequestMapping(value="{id}", method = RequestMethod.GET)
     public @ResponseBody
     CVEntry getCVByID(@PathVariable int id) {
@@ -44,11 +37,7 @@ public class CVControler {
         return cv;
     }
 
-    /**
-     * recoit un flux XML decrivant un CV, cree l'objet correspondant et retourne son nouvel identifiant au format XML
-     * @param cv
-     * @return
-     */
+
     @RequestMapping(value="", method = RequestMethod.POST)
     public @ResponseBody
     CVEntry getCVByPost(CVEntry cv) {
