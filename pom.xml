@@ -12,6 +12,31 @@
 		<spring.version>3.0.5.RELEASE</spring.version>
 	</properties>
 
+	<repositories>
+		<repository>
+			<id>eap</id>
+			<url>http://maven.repository.redhat.com/techpreview/all</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+	<pluginRepositories>
+		<pluginRepository>
+			<id>eap</id>
+			<url>http://maven.repository.redhat.com/techpreview/all</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</pluginRepository>
+	</pluginRepositories>
+
 	<dependencies>
 
 		<!-- Spring 3 dependencies -->
@@ -62,5 +87,24 @@
 			</plugin>
 		</plugins>
 	</build>
+
+    <profiles>
+        <profile>
+            <id>openshift</id>
+            <build>
+                <finalName>SpringMVC</finalName>
+                <plugins>
+                    <plugin>
+                        <artifactId>maven-war-plugin</artifactId>
+                        <version>2.1.1</version>
+                        <configuration>
+                            <outputDirectory>webapps</outputDirectory>
+                            <warName>ROOT</warName>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
 
 </project>
