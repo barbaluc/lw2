@@ -2,12 +2,21 @@ package urouen.model;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
+import java.util.ArrayList;
+import java.util.List;
 
 @XmlRootElement(name = "cv_entry")
 public class CVEntry {
     private int id;
     private String name;
     private String firstname;
+    private String gender;
+    private List<String> objectives;
+    private List<String> experiences;
+    private List<String> schools;
+    private List<String> skills;
+    private List<String> langages;
+    private List<String> computerSkills;
 
     public CVEntry() {
         this.id = 11110;
