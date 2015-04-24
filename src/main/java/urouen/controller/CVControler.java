@@ -45,7 +45,7 @@ public class CVControler {
     }
 
     /**
-     * recoit un flux XML décrivant un CV, cree l'objet correspondant et retourne son nouvel identifiant au format XML
+     * recoit un flux XML decrivant un CV, cree l'objet correspondant et retourne son nouvel identifiant au format XML
      * @param cv
      * @return
      */
