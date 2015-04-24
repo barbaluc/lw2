@@ -38,7 +38,7 @@ public class CVControler {
     @RequestMapping(value="", method = RequestMethod.POST)
     public @ResponseBody
     CVEntry getCVByPost(@RequestBody CVEntry cv) {
-        CVEntry cvEntry = new CVEntry(cv.getId(), cv.getName(), cv.getFirstname());
+        CVEntry cvEntry = new CVEntry(cv.getId(), cv.getFirstname(), cv.getName());
         cvEntry.setId(cv.getId());
         cvEntry.setFirstname(cv.getFirstname());
         cvEntry.setName(cv.getName());
