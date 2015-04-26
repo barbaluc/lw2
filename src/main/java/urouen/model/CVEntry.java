@@ -9,14 +9,6 @@ public class CVEntry {
     private int id;
     private String firstname;
     private String name;
-    //Attributs supplémentaires sur le CV
-    /*private String gender;
-    private List<String> objectives;
-    private List<String> experiences;
-    private List<String> schools;
-    private List<String> skills;
-    private List<String> langages;
-    private List<String> computerSkills;*/
 
     public CVEntry() {
         this.id = 11110;
