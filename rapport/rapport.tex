@@ -1,0 +1,81 @@
+\documentclass{univ-projet}
+
+
+%Import des packages utilisés pour le document
+\usepackage[utf8x]{inputenc}
+\usepackage[francais]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{verbatim}
+%\usepackage{array}
+%\usepackage{hyperref}
+%\usepackage{tabularx, longtable}
+%\usepackage[table]{xcolor}
+%\usepackage{fancyhdr}
+%\usepackage{lastpage}
+
+\usepackage{amsmath,amsfonts,amssymb,amsthm,epsfig,epstopdf}
+
+
+
+\definecolor{gris}{rgb}{0.95, 0.95, 0.95}
+
+%Redéfinition des marges
+%\addtolength{\hoffset}{-2cm}
+%\addtolength{\textwidth}{4cm}
+\addtolength{\topmargin}{-1cm}
+\addtolength{\textheight}{1cm}
+\addtolength{\headsep}{0.8cm} 
+\addtolength{\footskip}{-0.2cm}
+
+
+\theoremstyle{definition}
+\newtheorem{defn}{Definition}[section]
+
+%Import page de garde et structures pour la gestion de projet
+%\usepackage{structures}
+
+%Variables
+\logo{logo_univ.png}
+\title{Rapport de projet}
+\author{Lucas \bsc{Barbay}}
+\projet{Langages Web 2}
+\projdesc{Client-serveur REST}
+\filiere{M1 GIL}
+\signataire{}
+\date{\today}
+
+
+% -- Début du document -- %
+\begin{document} 
+
+%Page de garde
+\maketitle
+\newpage
+%La table des matières
+\tableofcontents
+\newpage
+
+\section{L'application}
+
+Vous la trouverais à l'url suivante : \url{http://lw2-barbaluc.rhcloud.com/}. L'application est hébergée sur un serveur openshift par redhat. J'ai décidé d'utiliser openshift car nous l'avions déjà utilisé en architecture distribuée.
+
+Pour retrouver les sources de mon application, le dépôt github : \url{https://github.com/barbaluc/lw2}
+
+L'application contient les trois méthodes demandées : 
+
+\begin{itemize}
+\item /resume qui liste tous les CV présent dans la base de données
+\item /resume/id qui affiche le CV contenant l'id en paramètre
+\item /resume qui créé un nouveau CV et l'ajoute dans la liste par le biais de la méthode POST
+\end{itemize}
+
+La persistence est disponible jusqu'à l'extinction du serveur openshift.
+
+
+\section{Le client}
+
+Le client est une interface en java permettant la création de CV par le biais d'un formulaire et l'envoie de ce CV sur l'application grâce à la méthode POST.
+
+Les sources de mon interface sont disponible à l'adresse suivante : \url{https://github.com/barbaluc/lw2client}
+
+\end{document}

@@ -12,8 +12,8 @@ public class CVList {
 
     public CVList() {
         this.cv = new ArrayList<CVEntry>();
-        cv.add(new CVEntry(1, "Jean", "Petitquidanse"));
-        cv.add(new CVEntry(2, "Alphonse", "Pastamob"));
+        cv.add(new CVEntry(1, "Stephane", "Herauville"));
+        cv.add(new CVEntry(2, "Youen", "Chene"));
         cv.add(new CVEntry(3, "Georges", "Washington"));
 
     }
